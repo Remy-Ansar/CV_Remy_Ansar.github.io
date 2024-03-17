@@ -42,6 +42,7 @@ main,
 p {
     display: flex;
     width: 100%;
+    margin-bottom: 1em;
 }
 
 .container {
@@ -86,6 +87,7 @@ p {
 
 #name {
     font-family: Baron_Neue;
+    font-size: 2em;
 }
 
 #travel {
@@ -97,11 +99,28 @@ h1, h2 {
     padding: 1em;
 }
 
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
 h3 {
-    
+    font-family: Playfair_Display;
     font-size: 1.4em;
 }
 
+h4 {
+    padding-bottom: 1.5em;
+    font-family: EB_Garamond;
+    font-style: italic;
+    font-size: 1.2em;
+}
+p {
+    font-size: 1.2em;
+}
 #news {
     font-family: EB_Garamond;
     gap: 5px 5px;
@@ -113,6 +132,10 @@ h3 {
 .specialityFont {
     font-family: EB_Garamond;
 font-style: italic;
+}
+
+li {
+    margin-bottom: 1em;
 }
 
 /*_____________________________________________________Header properties____________________________________________________________________________________________________________*/
@@ -323,6 +346,7 @@ img {
 .hobbies {
     font-style: italic;
     font-family: Playfair_Display;
+    margin-bottom: 2em;
 }
 
 
@@ -344,12 +368,16 @@ main {
     margin-bottom: 5em;
 }
 
-
+.mainContentTitle {
+    padding-bottom: 2em;
+    
+}
 
 .mainContentList {
-    list-style: unset;
+    list-style:initial;
     font-weight: bold;
     line-height: 2em;
+    padding-bottom: 1em;
 }
 
 
@@ -375,7 +403,7 @@ h3 .mainTitle {
     padding-top: 1em;
 }
 section .mainContent
-.mainContentTitle
+
 .mainItemContainer
 .mainContentItem
 /*_____________________________________________________Footer properties____________________________________________________________________________________________________________*/
@@ -383,6 +411,8 @@ section .mainContent
 footer {
     height: 100%;
 }
+
+
 /*_____________________________________________________Responsive properties____________________________________________________________________________________________________________*/
 
 
