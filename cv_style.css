@@ -1,29 +1,35 @@
 /*_____________________________________________________Main layout & properties____________________________________________________________________________________________________________*/
 
 * {
-    box-sizing: border-box;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 html {
     font-size: 0.8em;
     font-family: EB_Garamond;
+    height: 100%;
+
 
 }
 
 body {
-    height: 100%;
+    margin:1px;
+    padding: 5px;
     background: rgb(163, 224, 237);
     background: -moz-linear-gradient(90deg, rgba(163, 224, 237, 1) 39%, rgba(255, 255, 255, 1) 80%);
     background: -webkit-linear-gradient(90deg, rgba(163, 224, 237, 1) 39%, rgba(255, 255, 255, 1) 80%);
     background: linear-gradient(90deg, rgba(163, 224, 237, 1) 39%, rgba(255, 255, 255, 1) 80%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a3e0ed", endColorstr="#ffffff", GradientType=1);
-}
+ 
+   }
 
 ul {
     list-style: none;
 }
-
+li {
+    font-size: 1.4em;
+}
 header,
 aside,
 main,
@@ -42,15 +48,15 @@ main,
 p {
     display: flex;
     width: 100%;
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
 }
 
 .container {
     height: 100%;
-    width: 90%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-flow: row;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 #cvPic {
@@ -96,30 +102,36 @@ p {
 
 h1, h2 {
     font-family: Playfair_Display;
-    padding: 1em;
+    /* padding: 1em; */
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3em;
+    margin: 1em 0 1em 0.5em;
+  
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 2.5em;
+    margin-bottom: 1em;
 }
 
 h3 {
     font-family: Playfair_Display;
-    font-size: 1.4em;
+    font-size: 2em;
+    margin-bottom: 1em;
 }
 
 h4 {
-    padding-bottom: 1.5em;
+    /* padding-bottom: 1.5em; */
     font-family: EB_Garamond;
     font-style: italic;
-    font-size: 1.2em;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin : 1em 0px;
 }
 p {
-    font-size: 1.2em;
+    font-size: 1.6em;
 }
 #news {
     font-family: EB_Garamond;
@@ -135,7 +147,7 @@ font-style: italic;
 }
 
 li {
-    margin-bottom: 1em;
+    line-height: 2em;
 }
 
 /*_____________________________________________________Header properties____________________________________________________________________________________________________________*/
@@ -147,7 +159,7 @@ header {
     grid-auto-rows: 1fr;
     height: 100%;
     box-sizing: border-box;
-    overflow: hidden;
+    
 }
 
 .headerContent {
@@ -156,6 +168,7 @@ header {
     height: 100%;
     overflow: hidden;
     box-sizing: border-box;
+    line-height: 3em;
 }
 
 #name {
@@ -166,15 +179,13 @@ header {
 
 .nameTitle {
     font-size: 10em;
-    margin-bottom: 0.3em;    
+    /* margin-bottom: 0.3em;     */
     height: fit-content;
     font-family: baron-neue;
     
 }
 
-.institution {
-    margin-top: 15px;
-}
+
 
 .diplomaBorder {
     border-bottom: 1px dashed black;
@@ -188,7 +199,7 @@ display: flex;
 .rightUnderBorder {
 border-bottom: 3px solid black;
 width: 100%;
-margin-left: 7em;
+margin: 0 0 2em 7em
 }
 
 .leftUnderBorder {
@@ -212,9 +223,11 @@ aside {
     /* border-right: 3px solid black; */
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100%;
-    padding-bottom: 1em;
+    /* padding-bottom: 1em; */
+    height: 100%;
+    margin-bottom: 1em;
 }
 
 #RS {
@@ -232,7 +245,7 @@ li a {
 
 
 .listAsideID {
-    margin-top: 1em;
+    /* margin-top: 1em; */
     font-weight: bold;
         height: 100%;
         display: flex;
@@ -254,23 +267,35 @@ li a {
     list-style: unset;
     height: 100%;
     justify-content: space-between;
-    height: 5em;
+
 }
 
 .asideHobbies {
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+justify-content: space-around;
+
 }
 
+.hobbies {
+    height:100%;
+    
+}
 .asideContent {
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 margin-top: 1em;
-margin-bottom: 1em;
+margin-bottom: 5em;
+height:auto
 }
-
+.infoIdentite {
+    line-height: 5em;
+    height: 150%;
+}
+ul li {
+    line-height: 3em;
+}
 li img {
     display: inline-block;
 
@@ -286,7 +311,7 @@ img {
     border-bottom: 3px solid black;
     list-style: none;
     width: 45%;
-    margin-top: 0.5em;
+    margin-top: 1em;
     overflow-x: hidden;
     transition-delay: 200ms;
     transition-duration: 1s;
@@ -346,7 +371,7 @@ img {
 .hobbies {
     font-style: italic;
     font-family: Playfair_Display;
-    margin-bottom: 2em;
+    /* margin-bottom: 2em; */
 }
 
 
@@ -355,29 +380,31 @@ img {
 
 main {
     width:100%;
-    height:200vh;
+    margin-top: 1em;
+
 }
 .mainContainer {
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content: space-around;
+    
 }
 
 .mainContent {
-    margin-bottom: 5em;
+    margin-bottom: 2em;
 }
 
-.mainContentTitle {
-    padding-bottom: 2em;
-    
-}
+/* .mainContentTitle {
+    padding-bottom: 2em; 
+} */
 
 .mainContentList {
     list-style:initial;
     font-weight: bold;
-    line-height: 2em;
-    padding-bottom: 1em;
+    line-height: 3em;
+  
 }
 
 
@@ -391,21 +418,6 @@ main {
 }
 
 
-
-h4 ul li {
-    padding-top: 1em;
-}
-
-
-
-h3 .mainTitle {
-    padding-bottom: 1em;
-    padding-top: 1em;
-}
-section .mainContent
-
-.mainItemContainer
-.mainContentItem
 /*_____________________________________________________Footer properties____________________________________________________________________________________________________________*/
 
 footer {
