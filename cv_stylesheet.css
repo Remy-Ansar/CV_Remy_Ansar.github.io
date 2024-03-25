@@ -315,14 +315,18 @@ ul {
 
 header {
     grid-area: header;
-    border:var(--border)
+    border-top: none;
+    border-right: none;
+    border-left:var(--border)
 }
 
 /*_____________________________________________________Aside properties____________________________________________________________________________________________________________*/
 
 aside {
     grid-area: aside;
-    border:var(--border);
+    border-top: none;
+    border-left: none;
+    
 }
 .listAsideID {
     font-weight: bold;
@@ -350,7 +354,9 @@ aside {
 
 main {
     grid-area: main;
-    border:var(--border);
+    border-left:var(--border);
+    border-top: none;
+    border-right: none;
 }
 
 .mainContent {
@@ -369,13 +375,20 @@ main {
 /*_____________________________________________________Footer properties____________________________________________________________________________________________________________*/
 
 footer {
+    border-left: none;
+    border-bottom: none;
     width: 100%;
     grid-area: footer;
     display: grid;
-    grid-template-areas: 
-    "footer footer footer";
-    grid-auto-rows:max-content;
+    grid-template-areas:
+    "footer footer";
+
 }
+
+.personalInterestTitle {
+    display: flex;
+}
+
 #travel {
     font-weight: 550;
 }
