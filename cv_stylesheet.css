@@ -34,6 +34,7 @@ body {
 ul {
     list-style: none;
 }
+
 li {
     padding: var(--padding);
     line-height: 3em;
@@ -73,6 +74,7 @@ li {
     font-family: Playfair_Display;
     src: url(font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
 }
+
 h1,
 h2,
 h3,
@@ -112,18 +114,21 @@ header {
 }
 
 
-.headerTitleBorder{
+.headerTitleBorder {
     border-bottom: var(--border);
     padding: 0px;
 }
+
 div.headerItem:nth-last-child() {
     border-bottom: 0px;
 }
+
 .headerItem {
     border-bottom: dashed 2px black;
     margin-top: var(--margin-top);
     padding-bottom: var(--padding-bottom);
 }
+
 /*_____________________________________________________Aside properties____________________________________________________________________________________________________________*/
 
 aside {
@@ -131,16 +136,18 @@ aside {
     border-top: var(--border);
     border-left: var(--border);
 }
+
 .profilNews {
     border-left: none;
 }
+
 .listAsideID {
     font-weight: bold;
     font-size: 1.1em;
 }
 
 .listAside {
-    font-weight:700;
+    font-weight: 700;
     font-style: italic;
     font-family: EB_Garamond;
 }
@@ -150,21 +157,33 @@ aside {
     font-style: oblique;
 }
 
+.externalGithub::before {
+    content: url(img/github-mark50px.png);
+    display: inline;
+    align-items: center;
+}
+.externalLinkedInd::before {
+    content: url(img/logo-linkedin-noir50px.png);
+    display: inline;
+    align-items: center;
+}
+
 /*_____________________________________________________Main properties____________________________________________________________________________________________________________*/
 
 main {
     grid-area: main;
-    border-top:var(--border);
+    border-top: var(--border);
     border-right: var(--border);
 }
 
 .mainContent {
-    display:grid;
-    grid-template-areas: 
-    "main"
-    "main"
-    "main";
+    display: grid;
+    grid-template-areas:
+        "main"
+        "main"
+        "main";
 }
+
 .mainContentList {
     list-style: initial;
     font-weight: bold;
@@ -178,6 +197,7 @@ footer {
     border-left: var(--border);
     border-bottom: var(--border);
 }
+
 #travel {
     font-weight: 550;
 }
@@ -207,202 +227,210 @@ footer {
 
 
 @media screen and (min-width : 768px) {
+
     /*_____________________________________________________Main layout & properties____________________________________________________________________________________________________________*/
-* {
-    margin: 0px;
-    box-sizing: border-box;
-    padding: var(--padding);
-}
+    * {
+        margin: 0px;
+        box-sizing: border-box;
+        padding: var(--padding);
+    }
 
-html {
-    font-size: 1em;
-    font-family: Playfair_Display;
-    height: 100%;
-}
+    html {
+        font-size: 1em;
+        font-family: Playfair_Display;
+        height: 100%;
+    }
 
-body {
-    margin: 1px;
-    padding: 5px;
-    background: rgb(163, 224, 237);
-    background: -moz-linear-gradient(90deg, rgba(163, 224, 237, 1) 39%, rgba(255, 255, 255, 1) 80%);
-    background: -webkit-linear-gradient(90deg, rgba(163, 224, 237, 1) 39%, rgba(255, 255, 255, 1) 80%);
-    background: linear-gradient(90deg, rgba(163, 224, 237, 1) 39%, rgba(255, 255, 255, 1) 80%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a3e0ed", endColorstr="#ffffff", GradientType=1);
-}
+    body {
+        margin: 1px;
+        padding: 5px;
+        background: rgb(163, 224, 237);
+        background: -moz-linear-gradient(90deg, rgba(163, 224, 237, 1) 39%, rgba(255, 255, 255, 1) 80%);
+        background: -webkit-linear-gradient(90deg, rgba(163, 224, 237, 1) 39%, rgba(255, 255, 255, 1) 80%);
+        background: linear-gradient(90deg, rgba(163, 224, 237, 1) 39%, rgba(255, 255, 255, 1) 80%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a3e0ed", endColorstr="#ffffff", GradientType=1);
+    }
 
-.container {
-    display: grid;
-    grid-template-areas:
+    .container {
+        display: grid;
+        grid-template-areas:
             "aside header header"
             "aside main main"
             "aside main main"
             "aside main main"
-            
+
             "footer footer footer";
+    }
+
+    /*_____________________________________________________Variables____________________________________________________________________________________________________________*/
+
+    :root {
+        --margin-bottom: 1.5em;
+        --margin-top: 1.5em;
+        --padding: 0.5em;
+        --font-size-text: 1.5em;
+        --font-size-title: 2.5em bold;
+        --font-size-list: 1.8em;
+        --border: solid 2px black;
+    }
+
+
+
+    /*_____________________________________________________Fonts____________________________________________________________________________________________________________*/
+
+    @font-face {
+        font-family: Baron_Neue;
+        src: url(font/Baron_Neue/Baron\ Neue\ Black.otf);
+    }
+
+    @font-face {
+        font-family: Cormorant_Infant;
+        src: url(font/Cormorant_Infant/CormorantInfant-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: EB_Garamond;
+        src: url(font/EB_Garamond/EBGaramond-VariableFont_wght.ttf);
+    }
+
+    @font-face {
+        font-family: Playfair_Display;
+        src: url(font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        display: block;
+    }
+
+    h1 {
+        font-family: Baron_Neue;
+        font-size: 4em;
+    }
+
+    h2 {
+        font-family: Playfair_Display;
+        font-size: 3.5em;
+    }
+
+    h3 {
+        font-family: Playfair_Display;
+        font-size: 2.5em;
+    }
+
+    h4 {
+        font-family: Playfair_Display;
+        font-weight: 500;
+        font-style: italic;
+        font-size: 1.8em;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+
+    /*_____________________________________________________Header properties____________________________________________________________________________________________________________*/
+
+    header {
+        grid-area: header;
+        border-top: none;
+        border-right: none;
+        border-left: var(--border)
+    }
+
+    /*_____________________________________________________Aside properties____________________________________________________________________________________________________________*/
+
+    aside {
+        grid-area: aside;
+        border-top: none;
+        border-left: none;
+
+    }
+
+    .listAsideID {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+    .listAside {
+        font-weight: 700;
+        font-style: italic;
+        font-family: EB_Garamond;
+        font-size: 1.4em;
+    }
+
+    .listAsideJauge {
+        font-weight: 800;
+        font-style: oblique;
+        font-size: 1.4em;
+    }
+
+    #travel {
+        font-weight: 550;
+        font-size: 1.2;
+    }
+ 
+    /*_____________________________________________________Main properties____________________________________________________________________________________________________________*/
+
+    main {
+        grid-area: main;
+        border-left: var(--border);
+        border-top: none;
+        border-right: none;
+    }
+
+    .mainContent {
+        display: grid;
+        grid-auto-rows: max-content;
+        grid-template-areas:
+            "main"
+            "main"
+            "main";
+    }
+
+    .mainContentList {
+        list-style: initial;
+        font-weight: bold;
+        margin-left: 5em;
+    }
+
+    /*_____________________________________________________Footer properties____________________________________________________________________________________________________________*/
+
+    footer {
+        border-left: none;
+        border-bottom: none;
+        width: 100%;
+        grid-area: footer;
+    }
+
+    h2 .personalInterestTitle {
+        display: flex;
+        margin-bottom: none;
+        width: max-content;
+    }
+
+    #travel {
+        font-weight: 550;
+    }
+
+    .hobbiesItem {
+        font-size: 1.2em;
+    }
+
+    .hobbies {
+        width: 100%;
+    }
+
+    .footerContent {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
 }
 
-/*_____________________________________________________Variables____________________________________________________________________________________________________________*/
-
-:root {
-    --margin-bottom: 1.5em;
-    --margin-top: 1.5em;
-    --padding: 0.5em;
-    --font-size-text: 1.5em;
-    --font-size-title: 2.5em bold;
-    --font-size-list: 1.8em;
-    --border: solid 2px black;
-}
-
-
-
-/*_____________________________________________________Fonts____________________________________________________________________________________________________________*/
-
-@font-face {
-    font-family: Baron_Neue;
-    src: url(font/Baron_Neue/Baron\ Neue\ Black.otf);
-}
-
-@font-face {
-    font-family: Cormorant_Infant;
-    src: url(font/Cormorant_Infant/CormorantInfant-Regular.ttf);
-}
-
-@font-face {
-    font-family: EB_Garamond;
-    src: url(font/EB_Garamond/EBGaramond-VariableFont_wght.ttf);
-}
-
-@font-face {
-    font-family: Playfair_Display;
-    src: url(font/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-    display: block;
-}
-
-h1 {
-    font-family: Baron_Neue;
-    font-size: 4em;
-}
-
-h2 {
-    font-family: Playfair_Display;
-    font-size: 3.5em;
-}
-
-h3 {
-    font-family: Playfair_Display;
-    font-size: 2.5em;
-}
-
-h4 {
-    font-family: Playfair_Display;
-    font-weight: 500;
-    font-style: italic;
-    font-size: 1.8em;
-}
-
-ul {
-    list-style: none;
-}
-
-
-/*_____________________________________________________Header properties____________________________________________________________________________________________________________*/
-
-header {
-    grid-area: header;
-    border-top: none;
-    border-right: none;
-    border-left:var(--border)
-}
-
-/*_____________________________________________________Aside properties____________________________________________________________________________________________________________*/
-
-aside {
-    grid-area: aside;
-    border-top: none;
-    border-left: none;
-    
-}
-.listAsideID {
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-.listAside {
-    font-weight:700;
-    font-style: italic;
-    font-family: EB_Garamond;
-    font-size: 1.4em;
-}
-
-.listAsideJauge {
-    font-weight: 800;
-    font-style: oblique;
-    font-size: 1.4em;
-}
-
-#travel {
-    font-weight: 550;
-    font-size: 1.2;
-}
-/*_____________________________________________________Main properties____________________________________________________________________________________________________________*/
-
-main {
-    grid-area: main;
-    border-left:var(--border);
-    border-top: none;
-    border-right: none;
-}
-
-.mainContent {
-    display:grid;
-    grid-auto-rows:max-content;
-    grid-template-areas: 
-    "main"
-    "main"
-    "main";
-}
-.mainContentList {
-    list-style: initial;
-    font-weight: bold;
-}
-
-/*_____________________________________________________Footer properties____________________________________________________________________________________________________________*/
-
-footer {
-    border-left: none;
-    border-bottom: none;
-    width: 100%;
-    grid-area: footer;
-    display: grid;
-    grid-template-areas:
-    "footer footer";
-
-}
-
-.personalInterestTitle {
-    display: flex;
-}
-
-#travel {
-    font-weight: 550;
-}
-
-.hobbiesItem {
-    font-size: 1.2em;
-}
-
-.hobbies {
-    width: 100%;
-}
-
-}
-
-@media screen and (min-width : 1280px) {
-    
-}
+@media screen and (min-width : 1280px) {}
