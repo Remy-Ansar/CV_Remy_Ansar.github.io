@@ -9,6 +9,7 @@ html {
     font-size: 1em;
     font-family: Playfair_Display;
     height: 100%;
+
 }
 
 body {
@@ -271,7 +272,7 @@ footer {
         --font-size-text: 1.5em;
         --font-size-title: 2.5em bold;
         --font-size-list: 1.8em;
-        --border: solid 2px black;
+        --border: solid 4px black;
     }
 
 
@@ -332,6 +333,12 @@ footer {
         list-style: none;
     }
 
+    li {
+        font-size: 1.4em;
+    }
+    p {
+        font-size: 1.4em;
+    }
 
     /*_____________________________________________________Header properties____________________________________________________________________________________________________________*/
 
@@ -372,6 +379,26 @@ footer {
     #travel {
         font-weight: 550;
         font-size: 1.2;
+    }
+
+    #html {
+        height: 10%;
+        width: 50%;
+        border-bottom: none;
+        width: 45%;
+        margin-top: 0.5em;
+        overflow-x: hidden;
+        transition-delay: 200ms;
+        transition-duration: 1s;
+        transition-timing-function: ease-in;
+        
+    }
+    #html:hover {
+        width: 100%;
+        overflow-x: hidden;
+        transition-duration: 2s;
+        transition-timing-function: ease-out;
+        border-bottom: var(--border);
     }
  
     /*_____________________________________________________Main properties____________________________________________________________________________________________________________*/
