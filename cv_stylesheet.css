@@ -130,6 +130,23 @@ div.headerItem:nth-last-child() {
     padding-bottom: var(--padding-bottom);
 }
 
+.diploma {
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: Baron_Neue;
+}
+
+.specialityFont {
+    font-size: 1.4em;
+    font-style: italic;
+    font-weight: 600;
+    font-family: Cormorant_Infant;
+}
+
+.institution {
+    font-family: EB_Garamond;
+}
+
 /*_____________________________________________________Aside properties____________________________________________________________________________________________________________*/
 
 aside {
@@ -153,21 +170,91 @@ aside {
     font-family: EB_Garamond;
 }
 
-.listAsideJauge {
-    font-weight: 800;
-    font-style: oblique;
-}
-
 .externalGithub::before {
     content: url(img/github-mark50px.png);
     display: inline;
-    align-items: center;
+    justify-content: space-between;
 }
 .externalLinkedInd::before {
     content: url(img/logo-linkedin-noir50px.png);
     display: inline;
     align-items: center;
 }
+
+.listAsideJauge {
+    font-weight: 800;
+    font-style: oblique;
+}
+
+.jauge {
+border-bottom: 2px solid black;
+list-style: none;
+width: 25%;
+margin-top: 0.5em;
+overflow-x: hidden;
+transition-delay: 200ms;
+transition-duration: 1s;
+transition-timing-function: ease-in;
+}
+
+#htmlJauge:hover {
+    width: 100%;
+    overflow-x: hidden;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+
+#cssJauge:hover {
+    width: 90%;
+    overflow-x: hidden;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+
+#javascriptJauge:hover {
+    width: 60%;
+    overflow-x: hidden;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+
+#scssJauge:hover {
+    width: 60%;
+    overflow-x: hidden;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+
+
+#sqlJauge:hover {
+    width: 65%;
+    overflow-x: hidden;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+
+#phpJauge:hover {
+    width: 70%;
+    overflow-x: hidden;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+
+#vueJsJauge:hover {
+    width: 65%;
+    overflow-x: hidden;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+
+
+#symfonyJauge:hover {
+    width: 70%;
+    overflow-x: hidden;
+    transition-duration: 2s;
+    transition-timing-function: ease-out;
+}
+
 
 /*_____________________________________________________Main properties____________________________________________________________________________________________________________*/
 
@@ -206,21 +293,6 @@ footer {
 .hobbiesItem {
     font-size: 1.2em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -349,6 +421,22 @@ footer {
         border-left: var(--border)
     }
 
+    .diploma {
+        font-size: 1.8em;
+        font-weight: bold;
+        font-family: Baron_Neue;
+    }
+
+    .specialityFont {
+        font-size: 1.6em;
+        font-style: italic;
+        font-family: Cormorant_Infant;
+    }
+
+    .institution {
+        font-family: EB_Garamond;
+    }
+
     /*_____________________________________________________Aside properties____________________________________________________________________________________________________________*/
 
     aside {
@@ -356,6 +444,10 @@ footer {
         border-top: none;
         border-left: none;
 
+    }
+
+    .newsContent {
+        font-size: 1.6em;
     }
 
     .listAsideID {
@@ -376,30 +468,75 @@ footer {
         font-size: 1.4em;
     }
 
-    #travel {
-        font-weight: 550;
-        font-size: 1.2;
-    }
-
-    #html {
-        height: 10%;
-        width: 50%;
-        border-bottom: none;
-        width: 45%;
+    .jauge {
+        border-bottom: groove 3px black;
+        list-style: none;
+        width: 25%;
         margin-top: 0.5em;
         overflow-x: hidden;
         transition-delay: 200ms;
         transition-duration: 1s;
         transition-timing-function: ease-in;
+        }
         
-    }
-    #html:hover {
-        width: 100%;
-        overflow-x: hidden;
-        transition-duration: 2s;
-        transition-timing-function: ease-out;
-        border-bottom: var(--border);
-    }
+        #htmlJauge:hover {
+            width: 100%;
+            overflow-x: hidden;
+            transition-duration: 2s;
+            transition-timing-function: ease-out;
+        }
+        
+        #cssJauge:hover {
+            width: 90%;
+            overflow-x: hidden;
+            transition-duration: 2s;
+            transition-timing-function: ease-out;
+        }
+        
+        #javascriptJauge:hover {
+            width: 60%;
+            overflow-x: hidden;
+            transition-duration: 2s;
+            transition-timing-function: ease-out;
+        }
+        
+        #scssJauge:hover {
+            width: 60%;
+            overflow-x: hidden;
+            transition-duration: 2s;
+            transition-timing-function: ease-out;
+        }
+        
+        
+        #sqlJauge:hover {
+            width: 65%;
+            overflow-x: hidden;
+            transition-duration: 2s;
+            transition-timing-function: ease-out;
+        }
+        
+        #phpJauge:hover {
+            width: 70%;
+            overflow-x: hidden;
+            transition-duration: 2s;
+            transition-timing-function: ease-out;
+        }
+        
+        #vueJsJauge:hover {
+            width: 65%;
+            overflow-x: hidden;
+            transition-duration: 2s;
+            transition-timing-function: ease-out;
+        }
+        
+        
+        #symfonyJauge:hover {
+            width: 70%;
+            overflow-x: hidden;
+            transition-duration: 2s;
+            transition-timing-function: ease-out;
+        }
+
  
     /*_____________________________________________________Main properties____________________________________________________________________________________________________________*/
 
@@ -442,6 +579,7 @@ footer {
 
     #travel {
         font-weight: 550;
+        font-size: 1.2;
     }
 
     .hobbiesItem {
@@ -460,4 +598,3 @@ footer {
 
 }
 
-@media screen and (min-width : 1280px) {}
