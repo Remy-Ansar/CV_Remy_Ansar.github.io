@@ -469,7 +469,7 @@ footer {
     }
 
     .jauge {
-        border-bottom: solid 3px black;
+        border-bottom: solid 2px black;
         list-style: none;
         width: 25%;
         margin-top: 0.5em;
